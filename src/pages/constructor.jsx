@@ -42,9 +42,6 @@ export const Constructor = () => {
                                     >{volumes}</button>
                                 ))}
                                 </div>
-                                <button
-                                onClick={() => setPrice(item.price + 20)}
-                                >clocl</button>
                             </div>
                             : null
                             }
