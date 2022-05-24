@@ -1,0 +1,24 @@
+{
+  "coffes": [
+    {
+      "id": 0,
+      "imageUrl": "https://sun9-38.userapi.com/impg/9OC2W_u-4JETXDfBLZBoX1NmKrRM0cqK8iN3MQ/pPbM6GDN4cY.jpg?size=540x540&quality=96&sign=1e1c2b066047b3ba86739ff73cc87560&type=album",
+      "name": "Кофе Раф"
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://sun9-4.userapi.com/impg/y6AEt6Jv4Qm8ZnrBIJOiO9eFa6d5TewZU_9_4A/LEJb1Mk1Ogc.jpg?size=540x540&quality=96&sign=0a270d2672b4031aa4e5a7e22b8401f2&type=album",
+      "name": "Капучино"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://sun9-58.userapi.com/impg/dYkrh_rLM5zIz-MiQk861JsADzlyXoA0PxMf3A/Q4mIPcjBNGE.jpg?size=540x540&quality=96&sign=5acb385a5d48273eb0dee7be7886d4eb&type=album",
+      "name": "Латте"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://sun9-54.userapi.com/impg/sWzN8YFf1y6khD9EPF0ZQchPiQRmXNUfwBG2uQ/moybtQtSvnA.jpg?size=540x540&quality=96&sign=080ca1c793d2ee212850a665616c08a1&type=album",
+      "name": "Эспрессо"
+    }
+  ]
+}

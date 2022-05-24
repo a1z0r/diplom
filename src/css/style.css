@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    padding-top: 25px;
+    background-color: #FFD12D;
+    padding-bottom: 10px;
+}
+
+.navBarUl{
+    display: flex;
+}
+
+.navBarUl li{
+    list-style: none;
+    padding-left: 15px;
+    font-size: 32px;
+    padding-top: 55px;
+}
+.topNav{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoCase{
+    margin: 0;
+    max-width: 33%;
+    display: flex;
+    align-items: center;
+}
+.logoCase h4{
+    padding-left: 50px;
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+
+.profStyle{
+    margin: 0;
+    max-width: 33%;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    border-radius: 35px;
+}
+.profStyle a{
+    color: white;
+}
+.profStyle a:visited{
+    color: white;
+}
+/*end of Header*/
+
+main{
+    padding-top: 50px;
+    height: 2000px;
+}
+.caseWidth{
+    max-width: 66%;
+}
+
+.coffeeCart{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 85px;
+}
+.coffeeCart:hover{
+    cursor: pointer;
+}
+.coffeeCart img{
+    margin-top: 10px;
+    height: 170px;
+    width: 170px;
+    padding-bottom: 5px;
+}
+
+.coffeeCartCase{
+    display: grid;
+    gap: 15px;
+    grid-template-columns : repeat(5, 2fr);
+
+}
+
+h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+.seasonBgStyle{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.seasonBgStyle img{
+    border-radius: 45px;
+    width: 100%;
+
+}
+
+h1{
+    font-size: 46px;
+}
+
+.orderHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+nav a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+nav a:hover{
+    background-size: 100% 2px;
+}
+
+.profileStyle{
+    margin-top: 10px;
+    padding-left: 43%;
+}
+
+.authStyle{
+    height: 30px;
+    width: 220px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.authForm{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.linkAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.authBtn{
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.authBtn:hover{
+    color: #000000;
+    background-color: #FFD12D;
+    transition: 0.7s;
+}
+.constHeader{
+    display: flex;
+    justify-content: center;
+}
+.constructor{
+    display: flex;
+    max-width: 1000px;
+}
+.constructor h4{
+    margin-bottom: 10px;
+}
+.constructor button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.constructor button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.orderBtn{
+    height: 50px;
+    width: 160px;
+    margin-top: 15%;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+.orderBtnBlock{
+    display: flex;
+    justify-content: center;
+}
+.orderBtn:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+
+/*About case*/
+.aboutBlock{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.aboutBlock a{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutBlock img{
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.aboutBlock p{
+    font-size: 18px;
+    padding-right: 15px;
+}
+.interAbout{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+}
+.aboutInfo{
+    width: 100%;
+    height: 100%;
+}
+
+.carouselStyle{
+    height: 30%;
+    width: 100%;
+}
+h2{
+    font-size: 38px;
+}
+.headerInMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.orderRoutBtn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 220px;
+    border-radius: 35px;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    transition: 0.7s;
+}
+.orderRoutBtn:hover{
+    background-color: #FFD12D;
+    color: black;
+    transition: 0.7s;
+}
+
+.mapCaseStyle{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mapCaseStyle h2{
+    padding-bottom: 30px;
+}
+.baristaHeaders{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.ordersBlock{
+    max-width: 66%;
+    padding: 15px;
+    background-color: white;
+}
+.ordersBlock .coffeeCart{
+    background-color: white;
+}
+.contactsBlock{
+    margin-top: 15px;
+    max-width: 66%;
+}
+.contactsSocialBlock{
+    margin-top: 15px;
+    max-width: 66%;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+}
+.contactsBlock li{
+    margin-top: 15px;
+    list-style-type: none;
+}
+.contactsSocialBlock li{
+    margin-top: 15px;
+    list-style-type: none;
+}
+.basketStyle{
+    float: right;
+}
+.price{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.baristaBtn{
+    width: 250px;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.orderPrice{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.deleteSpan{
+    cursor: pointer;
+}
+.orderCartCase{
+    padding-bottom: 15px;
+}
+.sumBlock{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    float: left;
+}
+.outProfileBtn{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.outProfileBtn:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.aboutBlocks{
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom-color: #ffba57; /* Цвет линии справа */
+    border-bottom-style: solid; /* Стиль линии */
+    border-bottom-width: 5px; /* Толщина линии */
+}
+.aboutBlocks:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.aboutElements{
+    width: 33%;
+}
+.aboutElements h3{
+    text-align: justify;
+}
+.loginBtn a{
+    color: white;
+    border: none;
+    background-color: black;
+    transition: 0.7s;
+}
+.loginBtn a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.loginBtn{
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    width: 120px;
+    border-radius: 35px;
+    transition: 0.7s;
+}
+.loginBtn:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.warningHeader{
+    text-decoration-line: underline;
+    text-decoration-color: #FFD12D;
+    font-size: 28px;
+}
+.newLogoCase{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newLogoCase h4{
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
+}
+.paymentHeader{
+    margin-top: 2%;
+    font-size: 28px;
+}
+.paymentElement{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.paymentBtn{
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    width: 150px;
+    border-radius: 35px;
+    transition: 0.7s;
+    margin: 10px;
+}
+.paymentBtn:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.paymentBtnBlock{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.mapInOrder{
+    display: flex;
+    justify-content: center;
+}
+.newOrderBtn{
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    width: 120px;
+    border-radius: 35px;
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+}
+.newOrderBtn:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+.orderBtnBlock{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
