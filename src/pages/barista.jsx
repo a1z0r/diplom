@@ -1,7 +1,7 @@
 import BaristaHeader from "../components/baristaHeader";
 import React from "react";
-import OrderItem from "../components/orderItem";
 import {useDispatch, useSelector} from "react-redux";
+import OrderItem from "../components/orderItem";
 import {deleteAllItemInBasket} from "../store/basket/reducer";
 function Barista({basket}){
     const dispatch = useDispatch();
@@ -15,9 +15,9 @@ function Barista({basket}){
             <h2 className="baristaHeaders">Информация о заказах</h2>
             <div className="ordersBlock">
                 <div className="coffeeCartCase">
-                    {items.map(item =>
-                        <div className="coffeeCart"><OrderItem item={item} />
-                        </div>)}
+                        {items.map(item =>
+                                <div className="coffeeCart"><OrderItem item={item} />
+                                </div>)}
                 </div>
                 <div className="orderBtnBlock">
                     <button
@@ -26,6 +26,7 @@ function Barista({basket}){
                     >Подтвердить заказ</button>
                 </div>
             </div>
+
         </>
     );
 }

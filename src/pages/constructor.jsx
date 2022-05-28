@@ -4,19 +4,39 @@ import {useSelector} from "react-redux";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {setItemInBasket} from "../store/basket/reducer";
+import Footer from "../components/footer";
 
 export const Constructor = () => {
+    window.scrollTo(0, 0);
     const dispatch = useDispatch();
     const item = useSelector(state => state.item.currentItem);
     const [volume, setVolume] = useState("250");
     const [milk, setMilks] = useState("Обычное");
-    const [syrups, setSyrups] = useState(null);
+    const [syrups, setSyrups] = useState("Нет");
     const [quantity, setQuantity] = useState(1);
-    const [price, setPrice] = useState(item.price);
-    const handleClick = (e) => {
-        dispatch(setItemInBasket(item));
-    };
+    const fullPrice = item.totalPrice + item.price +
+        (milk === "Обычное" ? + 0 : + 30) +
+        (volume === "250" ? + 0 : + 0) +
+        (volume === "350" ? + 20 : + 0) +
+        (volume === "450" ? + 40 : + 0) +
+        (quantity === 2 ? + item.price : + 0) +
+        (quantity === 3 ? + item.price + item.price : + 0) +
+        (syrups === "Нет" ? + 0 : + 30);
+    const newItems =
+        {
+            "id": item.id,
+            "imageUrl": item.imageUrl,
+            "name": item.name,
+            "volume": item.volume ? {volume} : {},
+            "milk": item.milk ? {milk} : {},
+            "syrups": item.syrups ? {syrups} : {},
+            "price": fullPrice,
+            "quantity": item.quantity ? {quantity} : {}
+        }
 
+    const handleClick = (e) => {
+        dispatch(setItemInBasket(newItems));
+    };
     return(
         <>
             <Header />
@@ -40,6 +60,7 @@ export const Constructor = () => {
                                     }
                                     style={volumes === volume ? {background: "#FFD12D", color: "black"} : {}}
                                     >{volumes}</button>
+
                                 ))}
                                 </div>
                             </div>
@@ -54,7 +75,8 @@ export const Constructor = () => {
                                         onClick={() => setMilks(milks)}
                                         style={milks === milk ? {background: "#FFD12D", color: "black"} : {}}
                                     >{milks}</button>
-                                    ))}
+                                    ))
+                                    }
                                 </div>
                             </div>
                             : null
@@ -62,17 +84,16 @@ export const Constructor = () => {
                             {item.quantity ?
                             <div>
                                 <h4>Количество</h4>
-                                <div>
-                                    {item.quantity.map( quantitys => (
-                                    <button
-                                        onClick={() => setQuantity(quantitys)}
-                                        style={quantitys === quantity ? {background: "#FFD12D", color: "black"} : {}}
-                                    >{quantitys}</button>
-                                    ))}
-                                </div>
+                                {item.quantity.map( quantitys => (
+                                <button
+                                    onClick={() => setQuantity(quantitys)}
+                                    style={quantitys === quantity ? {background: "#FFD12D", color: "black"} : {}}
+                                >{quantitys}</button>
+                            ))}
                             </div>
                             : null
                             }
+
                             {item.syrups ?
                             <div>
                                 <h4>Сироп</h4>
@@ -87,7 +108,8 @@ export const Constructor = () => {
                             }
 
                             <div className="sumBlock">
-                                <h3>Сумма: {price}руб.</h3>
+
+                                <h3>Сумма: {fullPrice} руб.</h3>
                             </div>
                             <button className="orderBtn"
                                     onClick={ handleClick }

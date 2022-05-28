@@ -20,9 +20,9 @@ function Header(){
                     <Basket/>
                     <ul className="navBarUl">
                         <li><Link to="/">главная</Link></li>
+                        <li><Link to="/aboutUs">о нас</Link></li>
                         <li><Link to="/order">заказать</Link></li>
                         <li><Link to="/contacts">контакты</Link></li>
-                        <li><Link to="/aboutUs">о нас</Link></li>
                     </ul>
                 </nav>
             </header>

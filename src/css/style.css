@@ -66,7 +66,6 @@ header{
 
 main{
     padding-top: 50px;
-    height: 2000px;
 }
 .caseWidth{
     max-width: 66%;
@@ -79,7 +78,7 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    margin-bottom: 85px;
+    margin-bottom: 100px;
 }
 .coffeeCart:hover{
     cursor: pointer;
@@ -408,7 +407,7 @@ h2{
     flex-direction: row-reverse;
 }
 .aboutElements{
-    width: 33%;
+    width: 50%;
 }
 .aboutElements h3{
     text-align: justify;
@@ -506,4 +505,19 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+}
+.specStyles{
+    margin: 0;
+}
+.aboutImg{
+    margin-left: 20%;
+}
+.footer{
+    background-color: gainsboro;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }

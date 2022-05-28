@@ -10,10 +10,10 @@ const basketSlice = createSlice({
             state.itemsInBasket.push(action.payload)
         },
         deleteItemInBasket: (state, action) => {
-            state.itemsInBasket = state.itemsInBasket.filter(item => item.id !== action.payload)
+            state.itemsInBasket = state.itemsInBasket.filter(newItems => newItems.id !== action.payload)
         },
         deleteAllItemInBasket: (state, action) => {
-            state.itemsInBasket = state.itemsInBasket.filter(item => item !== action.payload)
+            state.itemsInBasket = state.itemsInBasket.filter(newItems => newItems.all !== action.payload)
         }
     }
 });

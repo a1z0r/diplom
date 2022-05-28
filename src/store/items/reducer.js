@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const itemsSlice = createSlice({
-    name: 'items',
+    name: 'newItems',
     initialState: {
         currentItem: null
     },

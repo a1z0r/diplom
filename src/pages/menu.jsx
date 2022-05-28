@@ -4,6 +4,8 @@ import Cart from "../components/cart";
 import Seasoncase from "../components/seasoncase";
 import Aboutcase from "../components/aboutcase";
 import Mapcase from "../components/mapcase";
+import Footer from "../components/footer";
+
 const items = [
     {
         "id": 1,
@@ -101,6 +103,7 @@ function Menu(){
                     <Mapcase />
                 </div>
             </main>
+            <Footer/>
         </>
     );
 }

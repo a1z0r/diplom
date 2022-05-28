@@ -8,7 +8,7 @@ function Authvisible(){
     return isAuth ?(
         <>
             <div className="profileStyle">
-                <h4>Приветствуем, <Link to="profile">{email}</Link></h4>
+                <h4>Приветствуем, <Link to="/profile">{email}</Link></h4>
             </div>
             <br/>
         </>
