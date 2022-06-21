@@ -14,7 +14,6 @@ function BaristaHeader(){
                             <img src={logo} alt=""/>
                             <h4>station réveil</h4>
                         </div>
-                        <Authvisible />
                     </div>
                     <ul className="navBarUl">
                         <h2>Панель баристы</h2>

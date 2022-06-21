@@ -17,8 +17,6 @@ function Profile(){
             <div className="caseWidth">
                 <img src="https://cdn-icons-png.flaticon.com/512/4825/4825038.png" width="250px" alt=""/>
                 <h4>Ваш электронный адрес {email}</h4>
-                <h4>Ваше имя </h4>
-                <h4>Ваши бонусы </h4>
                 <button
                     className="outProfileBtn"
                     onClick={()=>

@@ -20,6 +20,9 @@ function Payment(){
         navigate("/auth");
         dispatch(setItemInOrder(items));
     };
+    const clickToBack = (e) => {
+        navigate("/doorder");
+    };
     return(
 
         <div>
@@ -79,7 +82,12 @@ function Payment(){
                     <PaymentInputs />
                 </div>
                 <div className="orderBtnBlock">
+                <div className="orderBtnBlock">
+                    <button className="btnToBack" onClick={clickToBack}>Вернуться</button>
+                </div>
+                <div className="orderBtnBlock">
                     <button className="newOrderBtn" onClick={handleClick}>Заказать</button>
+                </div>
                 </div>
             </div>
         </div>

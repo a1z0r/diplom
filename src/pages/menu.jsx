@@ -5,6 +5,7 @@ import Seasoncase from "../components/seasoncase";
 import Aboutcase from "../components/aboutcase";
 import Mapcase from "../components/mapcase";
 import Footer from "../components/footer";
+import Menucart from "../components/menucart";
 
 const items = [
     {
@@ -97,7 +98,7 @@ function Menu(){
                     <Aboutcase />
                     <h2 className="headerInMenu">Наши предложения</h2>
                     <div className="coffeeCartCase">
-                        { items.map(item => <Cart item={item} key={item.id}/>) }
+                        { items.map(item => <Menucart item={item} key={item.id}/>) }
                     </div>
                     <Link to="/order"><p className="orderRoutBtn">Весь ассортимент</p></Link>
                     <Mapcase />

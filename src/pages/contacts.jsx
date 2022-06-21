@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import React from "react";
+import Mapcase from "../components/mapcase";
 
 function Contacts(){
     return(
@@ -20,6 +21,7 @@ function Contacts(){
                     <p>8-(999)-666-09-11</p>
                 </li>
             </ul>
+            <Mapcase />
             <h2 className="baristaHeaders">Мы в соцсетях и месседжерах</h2>
             <ul className="contactsSocialBlock">
                 <li><a href="https://vk.com/coffeelikench" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670029.png" width="50px" alt=""/></a></li>

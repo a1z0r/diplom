@@ -1,6 +1,8 @@
 import Header from "../components/header";
 import React from "react";
 import Footer from "../components/footer";
+import bg1 from "../assets/img/aboutBg1.jpeg"
+import bg2 from "../assets/img/aboutBg2.jpeg"
 
 function AboutUs(){
     window.scrollTo(0, 0);
@@ -11,7 +13,7 @@ function AboutUs(){
                 <div className="contactsBlock">
                     <div className="aboutBlocks">
                         <div className="aboutElements">
-                            <img src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="500px" alt=""/>
+                            <img src={bg1} width="500px" alt=""/>
                         </div>
                         <div className="aboutElements">
                             <h3>
@@ -39,7 +41,7 @@ function AboutUs(){
                     </div>
                     <div className="aboutBlocks">
                         <div className="aboutElements">
-                            <img src="https://images.pexels.com/photos/1402407/pexels-photo-1402407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            <img src={bg2}
                                  className="aboutImg"
                                  width="500px" alt=""/>
                         </div>

@@ -14,14 +14,15 @@ export const Constructor = () => {
     const [milk, setMilks] = useState("Обычное");
     const [syrups, setSyrups] = useState("Нет");
     const [quantity, setQuantity] = useState(1);
-    const fullPrice = item.totalPrice + item.price +
+    const [kolvo, setKolvo] = useState(1);
+    const fullPrice = kolvo * (item.totalPrice + item.price +
         (milk === "Обычное" ? + 0 : + 30) +
         (volume === "250" ? + 0 : + 0) +
         (volume === "350" ? + 20 : + 0) +
         (volume === "450" ? + 40 : + 0) +
         (quantity === 2 ? + item.price : + 0) +
         (quantity === 3 ? + item.price + item.price : + 0) +
-        (syrups === "Нет" ? + 0 : + 30);
+        (syrups === "Нет" ? + 0 : + 30));
     const newItems =
         {
             "id": item.id,
@@ -30,6 +31,7 @@ export const Constructor = () => {
             "volume": item.volume ? {volume} : {},
             "milk": item.milk ? {milk} : {},
             "syrups": item.syrups ? {syrups} : {},
+            "kolvo": item.kolvo ? {kolvo} : {},
             "price": fullPrice,
             "quantity": item.quantity ? {quantity} : {}
         }
@@ -93,7 +95,6 @@ export const Constructor = () => {
                             </div>
                             : null
                             }
-
                             {item.syrups ?
                             <div>
                                 <h4>Сироп</h4>
@@ -106,7 +107,36 @@ export const Constructor = () => {
                             </div>
                             : null
                             }
-
+                            <div>
+                                <h4>Количество:</h4>
+                                <div className="counterBlock">
+                                    {kolvo === 1 ?
+                                    <button
+                                        disabled
+                                        className="btnCounter"
+                                        onClick={() => setKolvo(kolvo - 1)}
+                                    >-</button>
+                                        :
+                                        <button
+                                            className="btnCounter"
+                                            onClick={() => setKolvo(kolvo - 1)}
+                                        >-</button>
+                                    }
+                                    <h3>{kolvo}</h3>
+                                    {kolvo === 10 ?
+                                        <button
+                                            disabled
+                                            className="btnCounter"
+                                            onClick={() => setKolvo(kolvo + 1)}
+                                        >+</button>
+                                        :
+                                        <button
+                                            className="btnCounter"
+                                            onClick={() => setKolvo(kolvo + 1)}
+                                        >+</button>
+                                    }
+                                </div>
+                            </div>
                             <div className="sumBlock">
 
                                 <h3>Сумма: {fullPrice} руб.</h3>

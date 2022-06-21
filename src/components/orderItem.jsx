@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {deleteItemInBasket} from "../store/basket/reducer";
 
@@ -8,6 +8,7 @@ function OrderItem({item}) {
     const handleClick = () => {
         dispatch(deleteItemInBasket(item.id));
     }
+
     return(
         <>
             <div>
@@ -22,9 +23,7 @@ function OrderItem({item}) {
                 {item.syrups.syrups ? <p className="specStyles">Сироп: {item.syrups.syrups}</p> :
                 null
                 }
-                {item.quantity.quantity ? <p className="specStyles">Количество: {item.quantity.quantity}</p> :
-                null
-                }
+                <p className="specStyles">Количество: {item.kolvo.kolvo}</p>
                 <span>Цена: {item.price} руб.</span>
                 <br/>
                 <span
